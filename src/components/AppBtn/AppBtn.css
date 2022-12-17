@@ -1,0 +1,60 @@
+:root {
+    --btn-width: 140px
+  }
+  .appbtn {
+    background-color: var(--theme-color);
+    color: #fff;
+    padding: 13px 20px;
+    transition: all 0.3s;
+    font-size: var(--font-small);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 100px 80px rgb(0 0 0 / 7%), 0 22.3363px 17.869px rgb(0 0 0 / 4%), 0 12.5216px 10.0172px rgb(0 0 0 / 4%), 0 6.6501px 5.32008px rgb(0 0 0 / 3%), 0 2.76726px 2.21381px rgb(0 0 0 / 2%);
+  }
+  .appbtn i {
+    transition: all 0.3s;
+  }
+  body .appbtn span {
+      color: #fff;
+      transition: all 0.3s;
+  }
+  .appbtn:hover {
+  }
+  .appbtn:active {
+    transform: scale(var(--scale-factor));
+  }
+  .appbtn.border {
+    background-color: #fff;
+    color: var(--theme-color);
+    border: solid 1px;
+  }
+  .appbtn.outlinebtn {
+    background-color: transparent;
+    border: solid 1px var(--theme-color);
+    color: var(--theme-color);
+  }
+  .appbtn.outlinebtn span {
+    color: var(--theme-color);
+  }
+  .appbtn.border:hover {
+    background-color: var(--theme-color);
+    color: #fff;
+    border: solid 1px transparent
+  }
+  .appbtn.graybtn {
+    background-color: rgb(146, 146, 146);
+  }
+   .appbtn.disabledbtn {
+    background-color: rgb(146, 146, 146);
+    cursor: no-drop;
+  }
+  .appbtn.appbtn.disabledbtn:active {
+    transform: initial;
+  }
+  .appbtn:hover i {
+   transform: translateX(5px);
+  }
